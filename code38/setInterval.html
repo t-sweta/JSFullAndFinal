@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>chai aur javacript</h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  
+</body>
+<script>
+  // const sayDate = function(){
+  //   console.log("shreya",Date.now());
+  // }
+
+  const sayDate = function(str){
+    console.log(str,Date.now());
+  }
+  // here we are passinfg a third parameter "hi" in it.
+  const intervalId = setInterval(sayDate,1000,"hi");
+  // we can stop it using the clear function
+  clearInterval(intervalId);
+
+</script>
+</html>
